@@ -25,6 +25,7 @@
   </head>
   <body>
     <header>
+        <!-- Top Navbar -->
       <nav class="deep-purple lighten-2">
         <div class="nav-wrapper">
           <a href="{{ url_for('home') }}" class="brand-logo">Task Manager</a>
@@ -33,15 +34,16 @@
           ></a>
           <ul class="right hide-on-med-and-down">
             <li><a href="{{ url_for('home') }}">Home</a></li>
-            <li><a href="">New Task</a></li>
+            <li><a href="{{ url_for('add_task') }}">New Task</a></li>
             <li><a href="{{ url_for('categories') }}">Categories</a></li>
           </ul>
         </div>
       </nav>
 
+      <!-- Mobile Sidenav -->
       <ul class="sidenav" id="mobile-demo">
         <li><a href="{{ url_for('home') }}">Home</a></li>
-        <li><a href="">New Task</a></li>
+        <li><a href="{{ url_for('add_task') }}">New Task</a></li>
         <li><a href="{{ url_for('categories') }}">Categories</a></li>
       </ul>
     </header>
